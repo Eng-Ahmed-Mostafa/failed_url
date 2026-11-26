@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Unavailable | المشروع غير متاح</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #6366f1;
+            --primary-light: #818cf8;
+            --background: #080b16;
+            --card: #111629;
+            --text: #f8fafc;
+            --muted: #94a3b8;
+            --border: rgba(255,255,255,.08);
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            background:
+                radial-gradient(circle at 15% 20%, rgba(99,102,241,.15), transparent 35%),
+                radial-gradient(circle at 85% 80%, rgba(14,165,233,.10), transparent 35%),
+                var(--background);
+            color: var(--text);
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 720px;
+            text-align: center;
+        }
+
+        .language {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+
+        .language span {
+            padding: 8px 18px;
+            border: 1px solid var(--border);
+            border-radius: 30px;
+            color: var(--muted);
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        .card {
+            padding: 55px 35px;
+            background: rgba(17,22,41,.85);
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            box-shadow: 0 25px 80px rgba(0,0,0,.35);
+            backdrop-filter: blur(15px);
+        }
+
+        .illustration {
+            width: 115px;
+            height: 115px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 35px;
+            background: rgba(99,102,241,.12);
+            border: 1px solid rgba(129,140,248,.2);
+            font-size: 55px;
+            transform: rotate(-5deg);
+        }
+
+        .error-code {
+            color: var(--primary-light);
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: clamp(25px, 5vw, 36px);
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            max-width: 490px;
+            margin: 0 auto;
+            color: var(--muted);
+            font-size: 15px;
+            line-height: 2;
+        }
+
+        .divider {
+            height: 1px;
+            background: var(--border);
+            margin: 35px 0;
+        }
+
+        .english {
+            direction: ltr;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .english h2 {
+            font-size: 23px;
+            margin-bottom: 12px;
+        }
+
+        .english p {
+            max-width: 480px;
+            margin: auto;
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.9;
+        }
+
+        .status {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            margin-top: 35px;
+            padding: 10px 18px;
+            border-radius: 30px;
+            background: rgba(245,158,11,.08);
+            color: #fbbf24;
+            font-size: 12px;
+        }
+
+        .status-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #fbbf24;
+            box-shadow: 0 0 12px #fbbf24;
+        }
+
+        footer {
+            margin-top: 25px;
+            color: #64748b;
+            font-size: 12px;
+        }
+
+        @media(max-width: 480px) {
+            .card {
+                padding: 40px 20px;
+            }
+
+            .illustration {
+                width: 95px;
+                height: 95px;
+                font-size: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="language">
+            <span>ARABIC &nbsp; • &nbsp; ENGLISH</span>
+        </div>
+
+        <section class="card">
+
+            <div class="illustration">
+                🔒
+            </div>
+
+            <div class="error-code">ERROR 403</div>
+
+            <h1>لا يمكن الوصول إلى هذا المشروع</h1>
+
+            <p class="description">
+                عذراً، لا يمكنك الوصول إلى هذا المشروع حالياً.
+                قد يكون المشروع خاصاً، أو تم تقييد الوصول إليه،
+                أو أن الرابط الذي تستخدمه غير صحيح.
+            </p>
+
+            <div class="divider"></div>
+
+            <div class="english">
+                <h2>Project Unavailable</h2>
+
+                <p>
+                    Sorry, you cannot access this project at the moment.
+                    It may be private, access may be restricted,
+                    or the URL you are using might be incorrect.
+                </p>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                Access Restricted | الوصول مقيّد
+            </div>
+
+        </section>
+
+        <footer>
+            &copy; 2026 — All Rights Reserved
+        </footer>
+
+    </main>
+
+</body>
+</html>
